@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <ul class="navbar">
+        <li><a href="base.html">მთავარი</a></li>
+        <li><a href="car.html">მანქანები</a></li>
+        <li><a href="bigcars.html">მძიმე ტექნიკა</a></li>
+        <li><a href="agro.html">სასოფლო-სამეურენო ტექნიკა</a></li>
+        <li><a href="airtrans.html">საჰაერო ტრასპორტი</a></li>
+        <li><a href="seatran.html">საზღვაო ტრასპორტი</a></li>
+        <li><a href="contact.html">კონტაქტი</a></li>
+        <li class="rightnav"><a href="registration.html">რეგისტრაცია</a></li>
+        <li class="rightnav"><a href="login.html">შესვლა</a></li>
+    </ul>
+
+    <form  style="max-width:500px; margin:auto" onsubmit ="return passval(), twopass()">
+        <h2 class="regh1">რეგისტრაცია</h2>
+        <div class="inputs">
+          <i class="title">სახელი: </i>
+          <input class="inputs2" type="text" placeholder="სახელი">
+        </div>
+
+
+
+
+        <div class="inputs">
+            <i class="title">პაროლი: </i>
+            <input class="inputs2" type="password" placeholder="პაროლი" id = "password1" >
+        </div>
+      
+
+        <div class="inputs">
+          <i class="title">პაროლი:</i>
+          <input class="inputs2" type="password" placeholder="გაიმეორეთ პაროლი" id = "password2">
+        </div>
+
+
+        <span id = "pass" style="color:red; font-weight:bold"></span>
+        <br> 
+        <span id = "pass2" style="color:red; font-weight:bold"> </span>
+
+  
+            
+
+
+        
+        <div class="inputs">
+          <i class="title">ემაილი</i>
+          <input class="inputs2" type="email" placeholder="ემაილი" id="email">
+        </div>
+        <span id = "meial" style="color:red; font-weight:bold"></span>
+
+        <div class="inputs">
+          <i class="title">ქვეყანა:</i>
+          <select class="inputs2" placeholder="ემაილი">
+            <option value="georgia">საქართველო</option>
+            <option value="usa">ამერიკა</option>
+            <option value="canada">კანადა</option>
+            <option value="turkish">თურქეთი</option>
+            <option value="german">გერმანია</option>
+            <option value="other">სხვა</option>
+          </select>
+        </div>
+
+        <div class="inputs">
+          <i class="title">ქალაქი:</i>
+          <select class="inputs2" placeholder="ქალაქი">
+            <option value="georgia">თბილისი</option>
+            <option value="usa">რუსთავი</option>
+            <option value="canada">ბერლინი</option>
+            <option value="turkish">ხაშური</option>
+            <option value="german">ლონდონი</option>
+            <option value="other">ვაშინგოტი</option>
+            <option value="other">სხვა</option>
+          </select>
+        </div>
+
+
+        <div class="inputs">
+          <i class="title">ნომერი:</i>
+          <input class="inputs2" type="number"placeholder="ტელ. ნომერი">
+        </div>
+
+        <div class="inputs">
+          <i class="title">თარიღი:</i>
+          <input class="inputs2" type="time" min="06:00" max="24:00">
+        </div>
+
+          
+
+
+        
+        <button onclick="registration()" class="bootn" type="submit" >რეგისტრაცია</button>
+      </form>
+
+    
+    
+
+
+
+
+
+<script src="main.js" ></script>
+</body>
+</html>
